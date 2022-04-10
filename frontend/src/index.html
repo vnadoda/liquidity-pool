@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ETH-SPC Liquidity Pool</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <h1>ICO & LP</h1>
+    <section>
+      <h2>ICO</h2>
+      <div>
+        <button id="moveLiqBtn" type="button">Move Liquidity to Pool</button>
+      </div>
+    </section>
+    <section>
+      <h2>Pool</h2>
+      <h3
+        id="spcPriceLabel"
+        style="font-weight: bold; color: rgb(190, 189, 199)"
+      >
+        Current SPC per ETH price:
+      </h3>
+      <form id="lp_deposit">
+        Deposit for LP tokens <br />
+        <input name="eth" value="1" autocomplete="off" /> ETH<br />
+        <input name="spc" value="5" autocomplete="off" /> SPC<br />
+        <button id="addLiqBtn" type="button">Add Liquidity</button>
+      </form>
+
+      <form id="lp_withdraw">
+        Withdraw from pool <br />
+        <input
+          id="lpBalanaceInput"
+          value="0"
+          readonly
+          style="border: none; background-color: bisque"
+        />
+        LP Token Balance<br />
+        <input name="lpToken" value="1" autocomplete="off" /> LP Token<br />
+        <button id="removeLiqBtn" type="button">Remove Liquidity</button>
+      </form>
+    </section>
+    <section>
+      <h2>Trade</h2>
+      <form id="swap">
+        Trade SPC for ETH <br />
+        <input name="amount_in" value="1" autocomplete="off" />
+        <span id="swap_in_label">ETH</span>
+        <small id="switcher" style="text-decoration: underline; cursor: pointer"
+          >swap</small
+        >
+        <br />
+        <input id="slippageInput" value="1" autocomplete="off" />
+        <span id="slippage_label">Slippage(%)</span><br />
+        <input
+          id="minAmtOutInput"
+          value="0"
+          readonly
+          style="border: none; background-color: bisque"
+        />
+        Min Amount Out Based On Slippage<br />
+        <span id="swap_out_label">Expected 0 SPC</span><br />
+        <button id="tradeBtn" type="button">Trade</button>
+      </form>
+    </section>
+    <br />
+    <section style="border: none;">
+      <label id="error" style="font-weight: bold; color: rgb(199, 55, 55)"></label>
+    </section>
+  </body>
+</html>
