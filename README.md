@@ -1,6 +1,6 @@
 # Space Token Initial Coin Offering and Liquidity Pool
 
-## <ins>SpaceCoin (SPC) ICO</ins>
+## SpaceCoin (SPC) ICO
 The goal of this ICO is to raise `30,000 ETH` by selling `150,000 SPC` token out of max supply of `500,000`. <br>
 The ICO has following three phases.
 
@@ -17,7 +17,7 @@ ICO has following features:
 - The contract owner can enable/disable 2% tax on Space token transfer except for initial investment in the ICO. By default, this transfer tax is disabled, Transfer tax is deposited in the treasury account.
 - The treasury can move funds to ETH-SPC liquidity pool
 
-## <ins>SpaceCoin Liquidity Pool</ins>
+## SpaceCoin Liquidity Pool
 This is Uniswap style constant product market maker pool & router to provide swapping for ETH & SPC pair.
 
 SPC-ETH liquidity pool has following features:
